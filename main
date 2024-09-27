@@ -8,7 +8,8 @@ def intersect(nums1, nums2):
     # find common elements through set intersection
     common_elements = counter1 & counter2
     
-    return common_elements.elements()
+    
+    return list(common_elements.elements())
     
     
     
@@ -18,3 +19,4 @@ def intersect(nums1, nums2):
     
 print(intersect([1,2,2,1], [2,2]))
 print(intersect([4,9,5], [9,4,9,8,4]))
+print(intersect([1,2], [8,9]))
